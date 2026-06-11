@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Betterware - Productos de Calidad para tu Hogar</title>
+    <title>Banquetes Camila | Servicio de comida y eventos</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -15,11 +15,11 @@
     <header>
       <div class="header-container">
         <div class="logo">
-          <img
-            src="https://betterwareytu.com/wp-content/uploads/2018/04/152x152.jpg"
-            alt="Betterware Logo"
-          />
-          <h1>Betterware</h1>
+          <div class="logo-mark">BC</div>
+          <div>
+            <h1>Banquetes Camila</h1>
+            <p>Comida para tus momentos especiales</p>
+          </div>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn">
           <i class="fas fa-bars"></i>
@@ -27,9 +27,10 @@
         <nav>
           <ul id="navMenu">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#cotizacion">Cotización</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
@@ -37,259 +38,335 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="inicio">
-      <h2>Productos de calidad para tu hogar</h2>
+    <section class="hero page-section is-active" id="inicio" data-section>
+      <p class="eyebrow">Banquetes Camila</p>
+      <h2>Comida deliciosa y montaje para eventos inolvidables</h2>
       <p>
-        Descubre la mejor selección de artículos para el hogar que harán tu vida
-        más fácil y cómoda.
+        Creamos experiencias para bodas, cumpleaños, XV años, reuniones
+        familiares y eventos empresariales con servicio de comida, atención y
+        presentación cuidada.
       </p>
-      <a href="#productos" class="btn">Ver Productos</a>
-    </section>
-
-    <!-- Productos Destacados -->
-    <section class="featured" id="productos">
-      <h2 class="section-title">Productos Destacados</h2>
-      <div class="products-grid">
-        
-        <!-- Producto 1 -->
-        <div class="product-card">
-          <div class="product-img">
-            <img
-              src="https://via.placeholder.com/300x300?text=Producto+1"
-              alt="Producto Betterware"
-            />
-          </div>
-          <div class="product-info">
-            <h3>Organizador de Cocina</h3>
-            <p>
-              Mantén tu cocina ordenada y todo al alcance de tu mano con este
-              práctico organizador.
-            </p>
-            <div class="price">$299.00</div>
-            <a href="#" class="btn">Comprar Ahora</a>
-          </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="product-card">
-          <div class="product-img">
-            <img
-              src="https://via.placeholder.com/300x300?text=Producto+2"
-              alt="Producto Betterware"
-            />
-          </div>
-          <div class="product-info">
-            <h3>Juego de Contenedores</h3>
-            <p>
-              Guarda tus alimentos de manera segura y mantén su frescura por más
-              tiempo.
-            </p>
-            <div class="price">$499.00</div>
-            <a href="#" class="btn">Comprar Ahora</a>
-          </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="product-card">
-          <div class="product-img">
-            <img
-              src="https://via.placeholder.com/300x300?text=Producto+3"
-              alt="Producto Betterware"
-            />
-          </div>
-          <div class="product-info">
-            <h3>Escoba Mágica</h3>
-            <p>
-              Limpia eficientemente todo tipo de pisos sin esfuerzo y con
-              excelentes resultados.
-            </p>
-            <div class="price">$399.00</div>
-            <a href="#" class="btn">Comprar Ahora</a>
-          </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="product-card">
-          <div class="product-img">
-            <img
-              src="https://via.placeholder.com/300x300?text=Producto+4"
-              alt="Producto Betterware"
-            />
-          </div>
-          <div class="product-info">
-            <h3>Set de Utensilios</h3>
-            <p>
-              Todo lo que necesitas para preparar tus alimentos con la más alta
-              calidad.
-            </p>
-            <div class="price">$599.00</div>
-            <a href="#" class="btn">Comprar Ahora</a>
-          </div>
-        </div>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn">Conocer servicios</a>
+        <a href="#contacto" class="btn btn-outline">Pedir cotización</a>
       </div>
     </section>
 
-    <!-- Beneficios -->
-    <section class="benefits" id="beneficios">
+    <section
+      class="featured page-section is-hidden"
+      id="servicios"
+      data-section
+    >
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-copy">
+        Diseñamos menús y montajes de acuerdo con el tipo de evento, el número
+        de invitados y el estilo que buscas.
+      </p>
+      <div class="services-grid">
+        <article class="service-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Servicio de comida</h3>
+          <p>
+            Menús completos, antojitos, desayunos, comidas formales y opciones
+            personalizadas.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-champagne-glasses"></i>
+          <h3>Banquetes para eventos</h3>
+          <p>
+            Bodas, XV años, bautizos, graduaciones y celebraciones familiares
+            con atención profesional.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-bell-concierge"></i>
+          <h3>Montaje y atención</h3>
+          <p>
+            Mesas, presentación, coordinación y servicio para que tu evento se
+            vea y se sienta especial.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="benefits page-section is-hidden" id="eventos" data-section>
       <div class="benefits-container">
-        <h2 class="section-title">¿Por qué elegir Betterware?</h2>
-        <div class="benefits-grid">
-          <!-- Beneficio 1 -->
-          <div class="benefit-item">
-            <i class="fas fa-medal"></i>
-            <h3>Calidad Garantizada</h3>
-            <p>
-              Todos nuestros productos están fabricados con los más altos
-              estándares de calidad.
-            </p>
-          </div>
+        <p class="eyebrow eyebrow-light">Eventos que hemos atendido</p>
+        <h2 class="section-title section-title-light">
+          Momentos que ya hicieron historia
+        </h2>
+        <div class="event-grid">
+          <article class="event-card">
+            <img
+              src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80"
+              alt="Boda atendida por Banquetes Camila"
+            />
+            <div class="event-card-content">
+              <span>Evento pasado</span>
+              <h3>Boda en jardín</h3>
+              <p>
+                Montaje elegante, menú buffet y servicio completo para 120
+                invitados.
+              </p>
+            </div>
+          </article>
 
-          <!-- Beneficio 2 -->
-          <div class="benefit-item">
-            <i class="fas fa-truck"></i>
-            <h3>Envío Rápido</h3>
-            <p>
-              Recibe tus productos en la comodidad de tu hogar en máximo 48
-              horas.
-            </p>
-          </div>
+          <article class="event-card">
+            <img
+              src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=900&q=80"
+              alt="Cumpleaños atendido por Banquetes Camila"
+            />
+            <div class="event-card-content">
+              <span>Evento pasado</span>
+              <h3>Cumpleaños familiar</h3>
+              <p>
+                Menú tradicional, mesa de postres y atención personalizada para
+                toda la familia.
+              </p>
+            </div>
+          </article>
 
-          <!-- Beneficio 3 -->
-          <div class="benefit-item">
-            <i class="fas fa-headset"></i>
-            <h3>Soporte 24/7</h3>
-            <p>
-              Nuestro equipo de atención al cliente está disponible para
-              resolver tus dudas.
-            </p>
-          </div>
+          <article class="event-card">
+            <img
+              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Evento empresarial atendido por Banquetes Camila"
+            />
+            <div class="event-card-content">
+              <span>Evento próximo</span>
+              <h3>Convivio empresarial</h3>
+              <p>
+                Próxima fecha con coffee break, bocadillos y montaje
+                corporativo.
+              </p>
+            </div>
+          </article>
 
-          <!-- Beneficio 4 -->
-          <div class="benefit-item">
-            <i class="fas fa-undo"></i>
-            <h3>Devoluciones Fáciles</h3>
-            <p>
-              Si no quedas satisfecho, te devolvemos tu dinero sin
-              complicaciones.
-            </p>
-          </div>
+          <article class="event-card">
+            <img
+              src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+              alt="XV años por Banquetes Camila"
+            />
+            <div class="event-card-content">
+              <span>Evento próximo</span>
+              <h3>XV años</h3>
+              <p>
+                Próximo evento con menú especial, decoración y servicio de mesa.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Testimonios -->
-    <section class="testimonials" id="testimonios">
-      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <section
+      class="testimonials page-section is-hidden"
+      id="galeria"
+      data-section
+    >
+      <h2 class="section-title">Galería de eventos</h2>
+      <p class="section-copy section-copy-center">
+        Una muestra de cómo presentamos la comida, la mesa y la experiencia en
+        cada celebración.
+      </p>
       <div class="testimonial-grid">
-        <!-- Testimonio 1 -->
-        <div class="testimonial-card">
-          <p class="quote">
-            "Los productos Betterware han transformado mi hogar. La calidad es
-            excepcional y realmente hacen más fácil las tareas diarias."
+        <article class="testimonial-card gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+            alt="Mesa de alimentos"
+          />
+          <div class="gallery-caption">
+            <h3>Montaje buffet</h3>
+            <p>Presentación limpia y elegante para reuniones formales.</p>
+          </div>
+        </article>
+
+        <article class="testimonial-card gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=900&q=80"
+            alt="Mesa dulce"
+          />
+          <div class="gallery-caption">
+            <h3>Mesa de postres</h3>
+            <p>Opciones dulces para celebrar cumpleaños y fechas especiales.</p>
+          </div>
+        </article>
+
+        <article class="testimonial-card gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Comida servida"
+          />
+          <div class="gallery-caption">
+            <h3>Platos del evento</h3>
+            <p>
+              Menús servidos con cuidado para que todo llegue a tiempo y
+              caliente.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="quote-section page-section is-hidden"
+      id="cotizacion"
+      data-section
+    >
+      <div class="quote-layout">
+        <div class="quote-copy">
+          <p class="eyebrow">Cotizaciones</p>
+          <h2 class="section-title">Pide una propuesta para tu evento</h2>
+          <p class="section-copy section-copy-left">
+            Cuéntanos el tipo de evento, cuántas personas asistirán y qué estilo
+            de comida necesitas. Te responderemos con una propuesta ajustada a
+            tu celebración.
           </p>
-          <div class="author">
-            <img
-              src="https://via.placeholder.com/50x50?text=Usuario"
-              alt="Cliente Satisfecho"
-            />
-            <div class="author-info">
-              <h4>María González</h4>
-              <p>Cliente desde 2020</p>
+          <div class="quote-highlights">
+            <div>
+              <strong>Atención rápida</strong>
+              <span>Respuestas por WhatsApp o correo.</span>
+            </div>
+            <div>
+              <strong>Menús flexibles</strong>
+              <span>Opciones para desayunos, comidas y banquetes.</span>
             </div>
           </div>
         </div>
 
-        <!-- Testimonio 2 -->
-        <div class="testimonial-card">
-          <p class="quote">
-            "Excelente servicio al cliente y productos que superan mis
-            expectativas. ¡Recomiendo Betterware a todos mis amigos!"
-          </p>
-          <div class="author">
-            <img
-              src="https://via.placeholder.com/50x50?text=Usuario"
-              alt="Cliente Satisfecho"
+        <form class="quote-form" action="#" method="post">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
             />
-            <div class="author-info">
-              <h4>Carlos Martínez</h4>
-              <p>Cliente desde 2019</p>
+          </div>
+          <div class="form-row">
+            <label for="contacto-form">Teléfono</label>
+            <input
+              type="tel"
+              id="contacto-form"
+              name="contacto"
+              placeholder="Número de contacto o WhatsApp"
+            />
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="evento">Tipo de evento</label>
+              <select id="evento" name="evento">
+                <option>Boda</option>
+                <option>XV años</option>
+                <option>Cumpleaños</option>
+                <option>Evento empresarial</option>
+                <option>Reunión familiar</option>
+              </select>
+            </div>
+            <div>
+              <label for="fecha">Fecha del evento</label>
+              <input type="date" id="fecha" name="fecha" />
             </div>
           </div>
-        </div>
-
-        <!-- Testimonio 3 -->
-        <div class="testimonial-card">
-          <p class="quote">
-            "Nunca había comprado productos para el hogar con tanta calidad.
-            Vale cada centavo invertido en ellos."
-          </p>
-          <div class="author">
-            <img
-              src="https://via.placeholder.com/50x50?text=Usuario"
-              alt="Cliente Satisfecho"
-            />
-            <div class="author-info">
-              <h4>Laura Sánchez</h4>
-              <p>Cliente desde 2021</p>
+          <div class="form-row two-columns">
+            <div>
+              <label for="invitados">Número de invitados</label>
+              <input
+                type="number"
+                id="invitados"
+                name="invitados"
+                min="1"
+                placeholder="Ej. 80"
+              />
+            </div>
+            <div>
+              <label for="servicio">Servicio solicitado</label>
+              <select id="servicio" name="servicio">
+                <option>Cochinita Pibil</option>
+                <option>Banquete completo</option>
+                <option>Botanas</option>
+              </select>
             </div>
           </div>
-        </div>
+          <div class="form-row">
+            <label for="mensaje">Detalles adicionales</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Háblanos del lugar, horario, menú o cualquier detalle importante"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn quote-submit">
+            Solicitar cotización
+          </button>
+        </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contacto">
+    <footer class="page-section is-hidden" id="contacto" data-section>
       <div class="footer-container">
         <div class="footer-logo">
-          <img
-            src="https://via.placeholder.com/150x50?text=Betterware"
-            alt="Betterware Logo"
-          />
-          <p>Productos de calidad para hacer tu hogar un mejor lugar.</p>
+          <h3>Banquetes Camila</h3>
+          <p>
+            Servicio de comida, banquetes y organización para eventos sociales y
+            empresariales.
+          </p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a
+              href="https://www.facebook.com/CochinitaPibilMID"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/529991902572" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
           </div>
         </div>
 
         <div class="footer-links">
-          <h3>Productos</h3>
+          <h3>Servicios</h3>
           <ul>
-            <li><a href="#">Cocina</a></li>
-            <li><a href="#">Limpieza</a></li>
-            <li><a href="#">Organización</a></li>
-            <li><a href="#">Novedades</a></li>
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="#servicios">Comida para eventos</a></li>
+            <li><a href="#servicios">Banquetes completos</a></li>
+            <li><a href="#servicios">Montaje y decoración</a></li>
+            <li><a href="#eventos">Eventos pasados</a></li>
+            <li><a href="#galeria">Galería</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
-          <h3>Empresa</h3>
+          <h3>Eventos</h3>
           <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#">Franquicias</a></li>
-            <li><a href="#">Distribuidores</a></li>
+            <li><a href="#eventos">Bodas</a></li>
+            <li><a href="#eventos">XV años</a></li>
+            <li><a href="#eventos">Cumpleaños</a></li>
+            <li><a href="#eventos">Eventos empresariales</a></li>
+            <li><a href="#eventos">Convivios familiares</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
-          <h3>Ayuda</h3>
+          <h3>Contacto</h3>
           <ul>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Envíos y devoluciones</a></li>
-            <li><a href="#">Guía de tallas</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Contáctanos</a></li>
+            <li><a href="tel:+529991902572">Teléfono: +52 999 190 2572</a></li>
+            <li><a href="mailto:axl6513@gmail.com">axl6513@gmail.com</a></li>
+            <li><a href="#galeria">Instagram / Facebook</a></li>
+            <li><a href="#cotizacion">Cotizaciones</a></li>
+            <li><a href="#">Atención personalizada</a></li>
           </ul>
         </div>
       </div>
 
       <div class="copyright">
-        <p>&copy; 2023 Betterware. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Banquetes Camila. Todos los derechos reservados.</p>
       </div>
     </footer>
     <script src="script.js" defer></script>
