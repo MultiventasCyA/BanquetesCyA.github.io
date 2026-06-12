@@ -58,6 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
   setActiveSection(initialSectionId);
 });
 
+// Enviar cotización por WhatsApp
 if (quoteForm) {
   quoteForm.addEventListener("submit", (event) => {
     event.preventDefault();
