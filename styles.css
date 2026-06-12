@@ -26,8 +26,16 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(230, 177, 93, 0.2), transparent 35%),
-    radial-gradient(circle at right center, rgba(166, 61, 47, 0.12), transparent 32%),
+    radial-gradient(
+      circle at top left,
+      rgba(230, 177, 93, 0.2),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at right center,
+      rgba(166, 61, 47, 0.12),
+      transparent 32%
+    ),
     var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -160,7 +168,8 @@ nav ul li a:hover::after {
   padding-top: 4.5rem;
   background:
     linear-gradient(115deg, rgba(53, 36, 28, 0.82), rgba(166, 61, 47, 0.68)),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
   border-radius: 2rem;
   color: #fff7f2;
   box-shadow: var(--shadow);
@@ -217,7 +226,10 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-weight: 700;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
   box-shadow: 0 10px 25px rgba(230, 177, 93, 0.28);
 }
 
@@ -373,7 +385,7 @@ nav ul li a:hover::after {
 }
 
 .event-card p {
-  color:#fff;
+  color: #fff;
 }
 .testimonial-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
